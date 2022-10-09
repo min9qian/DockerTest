@@ -6,15 +6,14 @@ const express = require('express');
 const app = express()
 
 app.get('/user', (req, res) => {
-    res.send({ name: 'zs', age: 20, gender: 'Male'})
+    console.log("123");
 })
 
 app.get('/', (req, res) => {
-    console.log(req.query)
-    res.send(req.query)
+    console.log("456");
 })
 
 
-app.listen(80, () => {
+app.listen(3000, () => {
     console.log('express server running at http://127.0.0.1');
 })
